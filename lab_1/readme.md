@@ -75,6 +75,6 @@ ___сложность: Well-done___
    ![image](https://github.com/StefaniyaP/programming/assets/144994975/2d510a62-00a7-4492-9169-e827b17c6c60)
 
 ## Используемые материалы
-  [Блок-схема онлайн](https://products.aspose.app/diagram/ru/flowchart)
+  [Блок-схема онлайн](https://products.aspose.app/diagram/ru/flowchart)     
   [Лабы](https://evil-teacher.on.fleek.co)
 
