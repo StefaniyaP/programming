@@ -67,7 +67,7 @@ ___сложность: Well-done___
     } while(a <= 0 || b <= 0);
    ```
    Результат программы после ее запуска, если все введенные пользователем значения больше 0:    
-   ![image](https://github.com/StefaniyaP/programming/assets/144994975/9057de00-9358-401b-9836-29b1c264ef82)
+   ![image](https://github.com/StefaniyaP/programming/assets/144994975/9057de00-9358-401b-9836-29b1c264ef82)    
    Результат программы, если хотя бы одно введенное пользователем значение меньше либо равно 0:     
    ![image](https://github.com/StefaniyaP/programming/assets/144994975/39898a9c-8f54-481c-879d-93f2f9872b53)
   
