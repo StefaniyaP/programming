@@ -29,8 +29,6 @@ int main()
         fprintf(gp, "replot \n");
         fflush(gp);
     }
-    fprintf(gp, "set terminal gif\n"); 
-    fprintf(gp, "set output 'b.gif'\n");
     fclose(gp);
     fclose(output);
   
