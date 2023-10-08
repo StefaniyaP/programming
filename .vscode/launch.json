@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/stefa/OneDrive/Документы/GitHub/programming/lab_2",
-      "program": "c:/Users/stefa/OneDrive/Документы/GitHub/programming/lab_2/build/Debug/outDebug",
+      "cwd": "c:/Users/stefa/programming/lab_3",
+      "program": "c:/Users/stefa/programming/lab_3/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
