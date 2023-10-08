@@ -3,7 +3,7 @@
 
 int main()
 {
-    int n, i = -1, s, k;
+    int n, i = -1, s;
     int* arr = (int*)malloc(sizeof(int));
     int size = 1;
     
@@ -34,8 +34,6 @@ int main()
 
             for (int j = 0; j < size - 1; j++)
             {   
-                k = j;
-
                 if (j == n - s)
                     printf("%d - n\n", n); 
                 printf("%d\n", arr[j]);                      
