@@ -31,6 +31,13 @@ print(zoo)
 # Номера при выводе должны быть понятны простому человеку, не программисту.
 # TODO здесь ваш код
 
-print(zoo.index('lion'))
-index = [(i, x.index('lark')) for i, x in enumerate(zoo) if 'lark' in x]
-print(index)
+print(zoo.index('lion') + 1)
+
+k = 0
+for i in zoo:
+    k += 1
+
+for i, x in enumerate(zoo):
+    if 'lark' in x:
+        index = x.index('lark')
+        print(index + k)
