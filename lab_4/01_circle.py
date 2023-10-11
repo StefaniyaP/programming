@@ -11,6 +11,10 @@ radius = 42
 #       точность указывается в функции round()
 # TODO здесь ваш код
 
+pi = 3.1415926
+s = pi * radius * 2
+print(round(s, 4))
+
 
 # Далее, пусть есть координаты точки
 point_1 = (23, 34)
@@ -25,11 +29,26 @@ point_1 = (23, 34)
 #       операции сравнения дают булевы константы True и False
 # TODO здесь ваш код
 
+distance = (point_1[0] ** 2 + point_1[1] ** 2) ** 0.5
+# print(distance)
+if distance <= radius:
+    print(bool(1))
+else:
+    print(bool(0))
+
 # Аналогично для другой точки
 point_2 = (30, 30)
 # Если точка point_2 лежит внутри круга (radius = 42), то выведите на консоль True,
 # Или False, если точка лежит вовне круга.
 # TODO здесь ваш код
+
+distance = (point_2[0] ** 2 + point_2[1] ** 2) ** 0.5
+# print(distance)
+if distance <= radius:
+    print(bool(1))
+else:
+    print(bool(0))
+
 
 # Пример вывода на консоль:
 #

@@ -12,16 +12,20 @@ sites = {
 # Составим словарь словарей расстояний между ними
 # расстояние на координатной сетке - ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
 
-x1 = sites['Moscow'][0]
-x2 = sites['Moscow'][1]
+#x1 = sites['Moscow'][0]
+#y1 = sites['Moscow'][1]
 
-y1 = sites['London'][0]
-y2 = sites['London'][1]
+#x2 = sites['London'][0]
+#y2 = sites['London'][1]
 
-z1 = sites['Paris'][0]
-z2 = sites['Paris'][1]
+#x3 = sites['Paris'][0]
+#y3 = sites['Paris'][1]
 
-distances = {}
+distances = {
+    'Moscow - London': (((sites['Moscow'][0] - sites['London'][0]) ** 2 + (sites['Moscow'][1] - sites['London'][1]) ** 2) ** 0.5),
+    'Moscow - Paris': (((sites['Moscow'][0] - sites['Paris'][0]) ** 2 + (sites['Moscow'][1] - sites['Paris'][1]) ** 2) ** 0.5),
+    'London - Paris': (((sites['London'][0] - sites['Paris'][0]) ** 2 + (sites['London'][1] - sites['Paris'][1]) ** 2) ** 0.5),
+}
 
 # TODO здесь заполнение словаря
 
