@@ -14,7 +14,9 @@ sites = {
 
 #x1 = sites['Moscow'][0]
 #y1 = sites['Moscow'][1]
-
+moscow_london = ((sites['Moscow'][0] - sites['London'][0]) ** 2 + (sites['Moscow'][1] - sites['London'][1]) ** 2) ** 0.5
+moscow_paris = ((sites['Moscow'][0] - sites['Paris'][0]) ** 2 + (sites['Moscow'][1] - sites['Paris'][1]) ** 2) ** 0.5
+london_paris = ((sites['London'][0] - sites['Paris'][0]) ** 2 + (sites['London'][1] - sites['Paris'][1]) ** 2) ** 0.5
 #x2 = sites['London'][0]
 #y2 = sites['London'][1]
 
@@ -22,9 +24,19 @@ sites = {
 #y3 = sites['Paris'][1]
 
 distances = {
-    'Moscow - London': (((sites['Moscow'][0] - sites['London'][0]) ** 2 + (sites['Moscow'][1] - sites['London'][1]) ** 2) ** 0.5),
-    'Moscow - Paris': (((sites['Moscow'][0] - sites['Paris'][0]) ** 2 + (sites['Moscow'][1] - sites['Paris'][1]) ** 2) ** 0.5),
-    'London - Paris': (((sites['London'][0] - sites['Paris'][0]) ** 2 + (sites['London'][1] - sites['Paris'][1]) ** 2) ** 0.5),
+    'Moscow':
+    {
+        'Moscow - London': moscow_london, 'Moscow - Paris': moscow_paris
+    },
+    'London':
+    {
+        'Moscow - London': moscow_london, 'London - Paris': london_paris
+    },
+    'Paris':
+    {
+        'Moscow - Paris': moscow_paris, 'London - Paris': london_paris
+    }
+
 }
 
 # TODO здесь заполнение словаря
