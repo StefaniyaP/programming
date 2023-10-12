@@ -61,31 +61,7 @@ int main()
         } 
 
      }
-/*
-    for (i = 0; i < k/2; i++)
-    {
-        b = A[i];
-        if (b == n)
-        {
-            for (int j = 0; j < i/2; j++)
-            {
-                A[j] = A[i - j - 1];
-                A[i - j - 1] = b;
-            }
-            //for (int j = k; j > i; j -= 1)
-            //{
-             //   A[j] = A[k - j - 1];
-             //   A[k - j - 1] = b;
-            //}
-            break;
-        }
-        else
-        {
-            A[i] = A[k - i - 1];
-            A[k - i - 1] = b;
-        }
-    }
- */   
+ 
     for (i = 0; i < k; i++)
         printf("%4d ", A[i]);
 
