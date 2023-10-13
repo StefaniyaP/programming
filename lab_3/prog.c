@@ -13,7 +13,7 @@ int main()
 {
     srand(time(NULL));
     int k, i, n, b;
-    printf("k (size of an array) -> ");
+    printf("k (array length) -> ");
     scanf("%d", &k);
     int A[k];
 
