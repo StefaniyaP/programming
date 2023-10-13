@@ -102,5 +102,9 @@ int main()
       
 ### Блок-схема:
 
+![image](https://github.com/StefaniyaP/programming/assets/144994975/61c901bf-7e39-44ed-8c14-d2d562753fcd)      
+
+## Ссылки на используемые материалы:
+![Stack Overflow](https://stackoverflow.com)
 
 
