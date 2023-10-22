@@ -27,28 +27,30 @@ _Сложность:_ Rare
 
 Мой вариант:   
 
-![img.png](img.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/2934e009-92a1-4fcd-93d8-a16ae915a916)
 
 ### Графики, построенные во время выполнения уроков 1-3:
-![img_1.png](img_1.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/1f0a7f4e-9454-47eb-8263-3172dc6067b6)
 
-![img_3.png](img_3.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/c8972f81-7c17-49f3-bfd0-2788c5521521)
 
-![img_4.png](img_4.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/e956241b-f532-4697-992a-849539f1bbc0)
 
-![img_5.png](img_5.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/66590eba-27e7-421d-8383-f2d8dab29d7a)
 
-![img_6.png](img_6.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/7048a56f-ebfc-4e97-ac3c-58c62cef12c1)
 
-![img_7.png](img_7.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/659ec4dd-ef51-43cb-9357-6571278c9131)
 
-![img_8.png](img_8.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/c5b62bcc-8cab-47b6-a561-3e8fa7af6b2f)
 
-![img_9.png](img_9.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/8aa7b57a-ffa4-46a1-84c1-b88ae0e48e5d)
 
-![img_10.png](img_10.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/147773c0-db0e-4c8c-b052-f7921f2fdc4a)
 
-![img_11.png](img_11.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/33c8e0c9-e316-4422-9378-e6a77143d7b3)
+
+![image](https://github.com/StefaniyaP/programming/assets/144994975/878c4d8c-31e8-4bc8-965d-73fb349b28f7)
 
 ### График по варианту:
 ```Python
@@ -79,7 +81,7 @@ textcoords='data', arrowprops=dict(facecolor='y'))
 plt.ylim([0, 5])
 plt.show()
 ```
-![img_13.png](img_13.png)
+![image](https://github.com/StefaniyaP/programming/assets/144994975/18213b76-02aa-4f16-a4b4-c260b357da54)
 
 ### График по заданию 4:
 
