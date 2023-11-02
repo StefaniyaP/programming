@@ -33,27 +33,21 @@ _Сложность:_ Medium
 ![image](https://github.com/StefaniyaP/programming/assets/144994975/2934e009-92a1-4fcd-93d8-a16ae915a916)
 
 ### Графики, построенные во время выполнения уроков 1-3:
-![image](https://github.com/StefaniyaP/programming/assets/144994975/1f0a7f4e-9454-47eb-8263-3172dc6067b6)
+#### Matplotlib
+1) ![image](https://github.com/StefaniyaP/programming/assets/144994975/2f4cdb81-65f0-4269-b2c1-913843904bf7)
+2) ![image](https://github.com/StefaniyaP/programming/assets/144994975/06a64184-4f69-4463-8655-d1e31930e076)
+3) ![image](https://github.com/StefaniyaP/programming/assets/144994975/b182c72c-b4b0-400e-8749-4bdf24ec8653)
+4) ![image](https://github.com/StefaniyaP/programming/assets/144994975/70591f8f-88a8-459f-aeb2-d26ed95c658b)
+5) ![image](https://github.com/StefaniyaP/programming/assets/144994975/5ca43390-3540-4d01-a04b-f32b64863475)
+6) ![image](https://github.com/StefaniyaP/programming/assets/144994975/2f4ac36e-c8b3-4ca7-b075-8114fb1a436c)
 
-![image](https://github.com/StefaniyaP/programming/assets/144994975/c8972f81-7c17-49f3-bfd0-2788c5521521)
-
-![image](https://github.com/StefaniyaP/programming/assets/144994975/e956241b-f532-4697-992a-849539f1bbc0)
-
-![image](https://github.com/StefaniyaP/programming/assets/144994975/66590eba-27e7-421d-8383-f2d8dab29d7a)
-
-![image](https://github.com/StefaniyaP/programming/assets/144994975/7048a56f-ebfc-4e97-ac3c-58c62cef12c1)
-
-![image](https://github.com/StefaniyaP/programming/assets/144994975/659ec4dd-ef51-43cb-9357-6571278c9131)
-
-![image](https://github.com/StefaniyaP/programming/assets/144994975/c5b62bcc-8cab-47b6-a561-3e8fa7af6b2f)
-
-![image](https://github.com/StefaniyaP/programming/assets/144994975/8aa7b57a-ffa4-46a1-84c1-b88ae0e48e5d)
-
-![image](https://github.com/StefaniyaP/programming/assets/144994975/147773c0-db0e-4c8c-b052-f7921f2fdc4a)
-
-![image](https://github.com/StefaniyaP/programming/assets/144994975/33c8e0c9-e316-4422-9378-e6a77143d7b3)
-
-![image](https://github.com/StefaniyaP/programming/assets/144994975/878c4d8c-31e8-4bc8-965d-73fb349b28f7)
+#### Seaborn
+1) ![image](https://github.com/StefaniyaP/programming/assets/144994975/27187d7f-ca84-4197-8480-22dfa8366fe0)
+2) ![image](https://github.com/StefaniyaP/programming/assets/144994975/b84ded69-3b4c-4164-9851-547bb7f3ed21)
+3) ![image](https://github.com/StefaniyaP/programming/assets/144994975/618d46e5-32d1-403f-bdc8-62f3c5d9c33f)
+4) ![image](https://github.com/StefaniyaP/programming/assets/144994975/9a40ad07-4ca6-4de9-8e9b-15561703012f)
+5) ![image](https://github.com/StefaniyaP/programming/assets/144994975/7211e3ca-1b9d-44ee-bc1d-5ccaa714e3f2)
+6) ![image](https://github.com/StefaniyaP/programming/assets/144994975/d022c897-30b4-4f39-be14-4a4ea4a90004)
 
 ### График по варианту:
 ```Python
@@ -87,7 +81,39 @@ plt.show()
 ![image](https://github.com/StefaniyaP/programming/assets/144994975/18213b76-02aa-4f16-a4b4-c260b357da54)
 
 ### Сложность Medium
+
 График по варианту:   
+```Python
+import seaborn as sn
+import math
+import matplotlib.pylab as plt
+
+x = plt.arange(-1.0, 1.0, 0.1)
+y = [math.exp(-2 * math.sin(i)) for i in x]
+
+# касательная к функции. d - уравнение касательной, где
+# (-2 * math.exp(-2 * math.sin(x0)) * math.cos(x0) = f'(x0),
+# math.exp(-2 * math.sin(x0) = f(x0)
+dy = []
+x0 = 0
+for i in x:
+    d = ((-2 * math.exp(-2 * math.sin(x0)) * math.cos(x0)) * (i - x0)) + math.exp(-2 * math.sin(x0))
+    dy.append(d)
+
+sn.lineplot(x=x, y=y)
+g = sn.lineplot(x=x, y=dy)
+g.set_title('Graph')
+g.set(xlabel="x", ylabel="y")
+
+plt.legend(labels=['y = e^(-2 * sin(x))', 'касательная к функции y'])
+
+g.text(0, 1, "точка касания")
+
+plt.show()
+```
+
+![image](https://github.com/StefaniyaP/programming/assets/144994975/769ff78f-c2ad-4ea4-8ddf-df405edd3d44)
+
 
 
 
