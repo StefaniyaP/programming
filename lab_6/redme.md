@@ -91,7 +91,7 @@ __Сложность:__ ___Medium___
 
    Вывод:
 
-    ![img.png](img.png)
+    ![image](https://github.com/StefaniyaP/programming/assets/144994975/76f19d14-3b54-4a3d-8873-46b4852bf52a)
 
 2) ```Python
     # Сколько единиц содержится в двоичной записи значения выражения: 4^511+2^511−511?
@@ -145,9 +145,10 @@ __Сложность:__ ___Medium___
     doctest.testmod(name='convert', verbose=True)
    ```
    Вывод:
-    ![img_1.png](img_1.png)
+   
+   ![image](https://github.com/StefaniyaP/programming/assets/144994975/f92aab7e-e79d-457f-bc8c-717e69dba63c)
 
-3) ```Python
+4) ```Python
     # Пусть M(N) — произведение 5 наименьших различных натуральных делителей 
     # натурального числа N, не считая единицы. Если у числа N меньше 5 таких
     # делителей, то M(N) считается равным нулю.
@@ -184,7 +185,7 @@ __Сложность:__ ___Medium___
 
     print(res(n))
     ```
-    Вывод:
+    Вывод:         
   
     ![image](https://github.com/StefaniyaP/programming/assets/144994975/3d849268-03a0-4bb6-b207-a7afffb58539)
 
