@@ -90,7 +90,7 @@
      ```Python
      def b(k, x):
          if k == 0:
-            return 1.0 / (2.0 * x)
+             return 1.0 / (2.0 * x)
          bk = b(k-1, x) * x ** 2
          return bk
 
