@@ -12,10 +12,17 @@ void fill(int k, int a[])
 int main()
 {
     srand(time(NULL));
-    int k, i, n, b;
+    int k, i, n;
+    int* arr;
     printf("k (array length) -> ");
     scanf("%d", &k);
     int A[k];
+
+    arr = (int*)malloc(k * sizeof(int));
+    if (arr == NULL)
+        printf("Memory allocation error");
+    else
+        printf("ok\n");
 
     fill(k, A);
 
@@ -34,7 +41,7 @@ int main()
         index = i;
         break;
     }
-         
+
      if(index != -1) {
         int m = index;
         for (i = 0; i < m/2; i++)
@@ -50,7 +57,7 @@ int main()
             tmp = A[i];
             A[i] = A[k + m - i - 1];
             A[k + m - i - 1] = tmp;
-        }  
+        }
 
      } else {
         for (i = 0; i < k/2; i++)
@@ -58,13 +65,16 @@ int main()
             tmp = A[i];
             A[i] = A[k - i - 1];
             A[k - i - 1] = tmp;
-        } 
+        }
 
      }
- 
+
     for (i = 0; i < k; i++)
         printf("%4d ", A[i]);
 
     printf("\n");
+
+
+    free(arr);
     return 0;
 }
