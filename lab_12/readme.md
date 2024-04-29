@@ -42,11 +42,11 @@ class Calc:
         return p
 ```
 
-В файле ```lab.py``` было создано приложение на основе GUI фреймворка Toga. Код:    
+В файле ```lab.py``` было создано приложение на основе GUI фреймворка Toga. Код:
 
 ```Python
 import toga
-from lab_12.modules import iron_mod, tv_mod, washing_machine_mod
+from lab_12.modules import tv_mod, washing_machine_mod, iron_mod
 from toga.style.pack import COLUMN, Pack
 
 
@@ -60,8 +60,9 @@ class My_App(toga.App):
         main_box.add(toga.Label("Для какого электроприбора необходимо произвести рассчеты?", style=Pack(padding=5,
                                                                                                         font_size=12)))
         main_box.add(toga.TextInput(placeholder='"утюг", "телевизор", "стиральная машина"',
-                                    on_change=self.widget_value))   # введенное слово принимает функция widget_value
-        main_box.add(toga.Button('Далее', on_press=self.next_window))  # при нажатии кнопки вызывается функция next_window
+                                    on_change=self.widget_value))  # введенное слово принимает функция widget_value
+        main_box.add(
+            toga.Button('Далее', on_press=self.next_window))  # при нажатии кнопки вызывается функция next_window
 
         self.main_window = toga.MainWindow()
         self.main_window.content = main_box

@@ -1,5 +1,6 @@
 import toga
-from lab_12.modules import iron_mod, tv_mod, washing_machine_mod
+from lab_12.modules import iron_mod
+from lab_12.modules import tv_mod, washing_machine_mod
 from toga.style.pack import COLUMN, Pack
 
 
