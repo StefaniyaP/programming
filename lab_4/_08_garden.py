@@ -23,13 +23,16 @@ print(meadow_set)
 # выведите на консоль те, которые растут и там и там
 # TODO здесь ваш код
 
-print(garden_set.intersection(meadow_set))
+print1 = garden_set.intersection(meadow_set)
+print(print1)
 
 # выведите на консоль те, которые растут в саду, но не растут на лугу
 # TODO здесь ваш код
 
-print(garden_set - meadow_set)
+print2 = garden_set - meadow_set
+print(print2)
 
 # выведите на консоль те, которые растут на лугу, но не растут в саду
 # TODO здесь ваш код
-print(meadow_set - garden_set)
+print3 = meadow_set - garden_set
+print(print3)

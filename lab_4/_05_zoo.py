@@ -31,13 +31,8 @@ print(zoo)
 # Номера при выводе должны быть понятны простому человеку, не программисту.
 # TODO здесь ваш код
 
-print(zoo.index('lion') + 1)
+lion_index = zoo.index('lion') + 1
+print(lion_index)
 
-k = 0
-for i in zoo:
-    k += 1
-
-for i, x in enumerate(zoo):
-    if 'lark' in x:
-        index = x.index('lark')
-        print(index + k)
+lark_index = zoo[-1].index('lark') + len(zoo)
+print(lark_index)

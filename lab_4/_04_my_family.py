@@ -20,6 +20,9 @@ my_family_height = [
 
 # Выведите на консоль общий рост вашей семьи как сумму ростов всех членов
 #   Общий рост моей семьи - ХХ см
-print(f'Рост отца - {my_family_height[1][1]} см')
+f_height = f'Рост отца - {my_family_height[1][1]} см'
+print(f_height)
+
 total_height = my_family_height[0][1] + my_family_height[1][1] + my_family_height[2][1]
-print(f'Общий рост моей семьи - {total_height} см')
+t_height = f'Общий рост моей семьи - {total_height} см'
+print(t_height)
