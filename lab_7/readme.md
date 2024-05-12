@@ -5,7 +5,10 @@
   - условия задач
   - описаниие проделанной работы
   - скриншоты результатов
-  - ссылки на используемые материалы
+  - ссылки на используемые материалы       
+
+Сложность medium:   
+- Написать для своих функций тесты с помощью pytest    
 
 ### Мой вариант:
 
@@ -134,3 +137,49 @@
      Вывод:
      
      ![img_3.png](img_3.png)
+
+### Сложность medium
+
+1. Тестирование рекурсивной функции для создания $n$-мерных массивов
+Функция `test_create_n_dim_array` проверяет корректность размерности выводимых массивов
+```Python
+import pytest
+from lab_7.lab import create_n_dim_array
+
+t1 = create_n_dim_array(1, 3)
+t2 = create_n_dim_array(2, 3)
+t3 = create_n_dim_array(3, 2)
+
+
+def test_create_n_dim_array():
+    # Тестирование 1-мерного массива
+    assert t1 == ['level 3', 'level 3', 'level 3']
+
+    # Тестирование 2-мерного массива
+    assert t2 == [['level 3', 'level 3', 'level 3'],
+                  ['level 3', 'level 3', 'level 3'],
+                  ['level 3', 'level 3', 'level 3']]
+
+    # Тестирование 3-мерного массива
+    assert t3 == [[['level 2', 'level 2'],
+                   ['level 2', 'level 2']],
+                  [['level 2', 'level 2'],
+                   ['level 2', 'level 2']]]
+```
+Вывод:   
+![img_4.png](img_4.png)
+
+2. Тестирование рекурсивной функции для рассчета $y_k = b_k \cdot y_{k-1}$. $y_0 = 1$, $b_k = b_{k-1} x^2$, $b_0 = \frac{1}{2x}$, $x \neq 0$
+Тест проверяет правильность выводимого значения
+```Python
+import pytest
+from lab1 import y
+
+t1 = y(3, 2)
+
+
+def test_y():
+    assert t1 == 64.0
+```
+Вывод:   
+![img_5.png](img_5.png)
